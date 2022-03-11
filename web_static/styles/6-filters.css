@@ -70,7 +70,7 @@ h4 {
     visibility: visible;
 }
 
-h2 {
+.popover h2 {
     font-size: 16px;
     padding: 0px;
     margin: 10px 0px 0px 0px;
