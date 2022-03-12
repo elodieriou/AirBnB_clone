@@ -9,7 +9,9 @@
 .places h1 {
     font-size: 30px;
     width: 100%;
-    margin-left: 20px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 /* ----------------
@@ -97,10 +99,16 @@ article h2 {
 /* --------------
    Owner style */
 .user {
-    height: 10%;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    height: auto;
+    padding: 0px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.user p {
+    padding: 0px;
+    margin: 0px;
 }
 
 /* --------------------
@@ -108,4 +116,94 @@ article h2 {
 .description p {
     text-align: justify;
     margin: 0px;
+}
+
+/* ------------------
+   Amenities style */
+article .amenities {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+article .amenities h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: left;
+}
+
+article .amenities ul {
+    height: auto;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+article .amenities li {
+    list-style-type: none;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+.iconTv {
+    background-image: url("../images/icon_tv.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 22px;
+}
+
+.iconWifi {
+    background-image: url("../images/icon_wifi.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 22px;
+}
+
+.iconPets {
+    background-image: url("../images/icon_pets.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 22px;
+}
+
+/* ----------------
+   Reviews style */
+article .reviews {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+article .reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: left;
+}
+
+article .reviews ul {
+    height: auto;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+article .reviews li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+article .reviews li h3 {
+    font-size: 14px;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+article .reviews li p {
+    font-size: 12px;
+    margin: 0px;
+    padding-bottom: 20px;
 }
