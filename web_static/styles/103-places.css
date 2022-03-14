@@ -4,7 +4,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-bottom: 80px;
 }
 
 .places h1 {
@@ -13,6 +12,11 @@
     margin: 0px;
     padding-top: 20px;
     padding-left: 20px;
+}
+
+.places li {
+    margin-top: 5px;
+    list-style-type: none;
 }
 
 /* ----------------

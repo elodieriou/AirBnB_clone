@@ -58,7 +58,7 @@ h4 {
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     list-style-type: none;
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0px 20px 0px;
     display: none;
     position: relative;
     z-index: 1;
@@ -75,15 +75,22 @@ h4 {
 .popover h2 {
     font-size: 16px;
     padding: 0px;
-    margin: 10px 0px 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 20px;
 }
 
-li {
-    margin-top: 5px;
+.filters .locations li {
+    margin: 5px auto 0px 0px;
     list-style-type: none;
 }
 
-.nextPlaces {
+.filters .amenities li {
+    margin: 5px auto 0px 40px;
+    list-style-type: none;
+}
+
+.filters .locations .nextPlaces {
     margin-top: 20px;
 }
 
