@@ -4,7 +4,12 @@
 
 ## Introduction
 
-This project is the first step of a big one witch is to clone the AirBnB full web application.
+In this project, there are 2 parts: 
+* Step 1: create the console
+* Step 2: realise a web static
+
+## Step 1: Create the console
+
  * This first step is in python. We will start by implement the parent class called BaseModel.
  * This class do the initialization, serialization and deserialization of the future instances : Instance <-> Dictionary <-> JSON string <-> file
  * During this project, we created some classes that inherit from BaseModel such as : User, State, City, Place, review, state, amenity...
@@ -13,7 +18,8 @@ This project is the first step of a big one witch is to clone the AirBnB full we
  
 ![first step](/img/intro1.png "First step")
 
-## Definitions
+
+### Definitions
 
 First lets have some few definitions to help understand the project :
 
@@ -87,7 +93,7 @@ EOF  help  quit
 $
 ```
 
-## Main commands
+### Main commands
 
 | COMMAND after the (hbnb)                               |                 DESCRIPTION                  |
 |--------------------------------------------------------|:--------------------------------------------:|
@@ -101,7 +107,7 @@ $
  | update + class + id + attribute name + "attribute value" | To create or update the attribute of a class |
 | count + class                                          | To count the number of instance by class     |
 
-## [BaseModel](https://github.com/elodieriou/AirBnB_clone/blob/main/models/base_model.py)
+### [BaseModel](https://github.com/elodieriou/AirBnB_clone/blob/main/models/base_model.py)
 
 The BaseModel class is the parent of all the classes : 
 
@@ -114,7 +120,7 @@ The BaseModel class is the parent of all the classes :
 
 * The `to_dict method` returns a dictionary containing all the keys and values of the instance.
 
-## [Other classes](https://github.com/elodieriou/AirBnB_clone/tree/main/models)
+### [Other classes](https://github.com/elodieriou/AirBnB_clone/tree/main/models)
 All the classes listed bellow inherits from BaseModel :
 
 | class       | Attributes | Description |
@@ -127,7 +133,7 @@ All the classes listed bellow inherits from BaseModel :
 | [Amenity](https://github.com/elodieriou/AirBnB_clone/blob/main/models/amenity.py) |name                                     | This class retrieve information about the future amenity  |
 
 
-## [Filestorage](https://github.com/elodieriou/AirBnB_clone/blob/main/models/engine/file_storage.py)
+### [Filestorage](https://github.com/elodieriou/AirBnB_clone/blob/main/models/engine/file_storage.py)
 
 This file is composed of methods that are used by the console :
 * The `all method` display the dictionary view of objects.
@@ -138,7 +144,7 @@ This file is composed of methods that are used by the console :
 
 * The `reload method` deserialize the JSON file to object. In other words, bring the data in the `file.json` and change it to object.
 
-## [Console](https://github.com/elodieriou/AirBnB_clone/blob/main/console.py)
+### [Console](https://github.com/elodieriou/AirBnB_clone/blob/main/console.py)
 
 The HBNBCommand class is created to implement the prompt. The option `do` at the beginning of the method define the action. So `do_quit` defined the command to quit the prompt, the `EOF` command does the same with the signal.
 
@@ -176,7 +182,7 @@ $ method default switch by
 (hbnb) count User
 ```
 
-## [Python Unit Tests](https://github.com/elodieriou/AirBnB_clone/tree/main/tests/test_models)
+### [Python Unit Tests](https://github.com/elodieriou/AirBnB_clone/tree/main/tests/test_models)
 
 We have done some tests for our classes and methods. Tests are made to make sure our code display the result and the outputs expected.
 
@@ -188,3 +194,55 @@ And the command in non-interactive mode is :
 ```
 echo "python3 -m unittest discover tests" | bash
 ```
+
+## Step 2: Web static
+
+It's time to make our AirBnB alive. We will build the front end step-by-step: 
+
+* Create simple HTML static pages 
+* Style guide 
+* Fake contents 
+* No Javascript 
+* No data loaded from anything
+
+During this second part, we will learn to manipulate HTML and CSS languages. 
+
+![second step](/img/hbnb_step2.png "Second step")
+
+### Main files
+
+To see the entire project, go to these files:
+* [103-index.html](https://github.com/elodieriou/AirBnB_clone/blob/main/web_static/103-index.html)
+```commandline
+This file contain the html code with accessibility support.
+```
+* [103-common.css](https://github.com/elodieriou/AirBnB_clone/blob/main/web_static/styles/103-common.css)
+```commandline
+This file contains the stylesheet for the body and container.
+```
+* [103-filters.css](https://github.com/elodieriou/AirBnB_clone/blob/main/web_static/styles/103-filters.css)
+```commandline
+This file contains the stylesheet for the filters and the button search with a part of responsive design.
+```
+* [103-footer.css](https://github.com/elodieriou/AirBnB_clone/blob/main/web_static/styles/103-footer.css)
+```commandline
+This file contains the stylesheet for the footer.
+```
+* [103-header.css](https://github.com/elodieriou/AirBnB_clone/blob/main/web_static/styles/103-footer.css)
+```commandline
+This file contains the stylesheet for the header.
+```
+* [103-places.css](https://github.com/elodieriou/AirBnB_clone/blob/main/web_static/styles/103-places.css)
+```commandline
+This file contains the stylesheet for the Places article.
+```
+![screenshot](/img/airbnb_clone-web_static.png "web static")
+
+### Specifications
+
+```commandline
+CSS flexbox layout
+Responsive design
+Accessibility support
+```
+ 
