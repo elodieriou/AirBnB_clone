@@ -4,6 +4,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .places h1 {
