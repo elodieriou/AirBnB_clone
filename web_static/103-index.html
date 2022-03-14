@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/102-common.css">
-        <link rel="stylesheet" href="styles/102-header.css">
-        <link rel="stylesheet" href="styles/102-footer.css">
-        <link rel="stylesheet" href="styles/102-filters.css">
-        <link rel="stylesheet" href="styles/102-places.css">
+        <link rel="stylesheet" href="styles/103-common.css">
+        <link rel="stylesheet" href="styles/103-header.css">
+        <link rel="stylesheet" href="styles/103-footer.css">
+        <link rel="stylesheet" href="styles/103-filters.css">
+        <link rel="stylesheet" href="styles/103-places.css">
         <link rel="icon" href="images/icon.png">
         <title>AirBnB clone</title>
     </head>
@@ -16,7 +16,6 @@
         </header>
         <div class="container">
             <section class="filters">
-
                 <div class="locations">
                     <h3>States</h3>
                     <h4>The House's location.</h4>
@@ -53,16 +52,16 @@
                         <li>Pet-friendly</li>
                     </ul>
                 </div>
-                <button>Search</button>
+                <button aria-label="button search">Search</button>
             </section>
             <section class="places">
                 <h1>Places</h1>
-                <article>
+                <article aria-label="Article My home">
                     <h2>My home</h2>
                     <div class="price_by_night">
                         <p>$79</p>
                     </div>
-                    <div class="information">
+                    <div class="information" aria-description="Information on the number of passengers, beds and bathrooms.">
                         <div class="max_guest">
                             <p>4 Guests</p>
                         </div>
@@ -73,7 +72,7 @@
                             <p>1 Bathroom</p>
                         </div>
                     </div>
-                    <div class="user">
+                    <div class="user" aria-description="Information on the owner.">
                         <p><strong>Owner:</strong> Fabienne HARAN</p>
                     </div>
                     <div class="description">
@@ -85,15 +84,15 @@
                             Nunc scelerisque viverra mauris in aliquam sem. Eu volutpat odio facilisis
                             mauris sit amet massa vitae.</p>
                     </div>
-                    <div class="amenities">
+                    <div class="amenities" aria-description="Information on the amenities offered by the housing.">
                         <h2>Amenities</h2>
                         <ul>
                             <li class="iconTv">TV</li>
                             <li class="iconWifi">Wifi</li>
-                             <li class="iconPets">Pet friendly</li>
+                            <li class="iconPets">Pet friendly</li>
                         </ul>
                     </div>
-                    <div class="reviews">
+                    <div class="reviews" aria-description="Information on the reviews.">
                         <h2>2 Reviews</h2>
                         <ul>
                             <li>
@@ -108,12 +107,12 @@
                         </ul>
                     </div>
                 </article>
-                <article>
+                <article aria-label="Article Tiny House">
                     <h2>Tiny house</h2>
                     <div class="price_by_night">
                         <p>$39</p>
                     </div>
-                    <div class="information">
+                    <div class="information" aria-description="Information on the number of passengers, beds and bathrooms.">
                         <div class="max_guest">
                             <p>2 Guests</p>
                         </div>
@@ -124,7 +123,7 @@
                             <p>1 Bathroom</p>
                         </div>
                     </div>
-                    <div class="user">
+                    <div class="user" aria-description="Information on the owner.">
                         <p><strong>Owner:</strong> Benjamin BRARD</p>
                     </div>
                     <div class="description">
@@ -132,13 +131,13 @@
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Adipiscing elit duis tristique sollicitudin nibh sit amet.</p>
                     </div>
-                    <div class="amenities">
+                    <div class="amenities" aria-description="Information on the amenities offered by the housing.">
                         <h2>Amenities</h2>
                         <ul>
                              <li class="iconPets">Pet friendly</li>
                         </ul>
                     </div>
-                    <div class="reviews">
+                    <div class="reviews" aria-description="Information on the reviews.">
                         <h2>1 Review</h2>
                         <ul>
                             <li>
@@ -148,12 +147,12 @@
                         </ul>
                     </div>
                 </article>
-                <article>
+                <article aria-label="Article A suite">
                     <h2>A suite</h2>
                     <div class="price_by_night">
                         <p>$159</p>
                     </div>
-                    <div class="information">
+                    <div class="information" aria-description="Information on the number of passengers, beds and bathrooms.">
                         <div class="max_guest">
                             <p>8 Guests</p>
                         </div>
@@ -164,7 +163,7 @@
                             <p>2 Bathroom</p>
                         </div>
                     </div>
-                    <div class="user">
+                    <div class="user" aria-description="Information on the owner.">
                         <p><strong>Owner:</strong> Elodie RIOU</p>
                     </div>
                     <div class="description">
@@ -178,7 +177,7 @@
                             morbi tristique senectus et netus et malesuada fames. Sed faucibus
                             turpis in eu.  </p>
                     </div>
-                    <div class="amenities">
+                    <div class="amenities" aria-description="Information on the amenities offered by the housing.">
                         <h2>Amenities</h2>
                         <ul>
                             <li class="iconTv">TV</li>
@@ -186,7 +185,7 @@
                              <li class="iconPets">Pet friendly</li>
                         </ul>
                     </div>
-                    <div class="reviews">
+                    <div class="reviews" aria-description="Information on the reviews.">
                         <h2>3 Reviews</h2>
                         <ul>
                             <li>

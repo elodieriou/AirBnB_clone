@@ -57,17 +57,18 @@ h4 {
     width: auto;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    list-style-type: none;
-    padding: 20px 0px 20px 20px;
-    visibility: hidden;
+    padding: 20px 0px 20px 40px;
+    display: none;
+    position: relative;
+    z-index: 1;
 }
 
 .locations:hover .popover {
-    visibility: visible;
+    display: block;
 }
 
 .amenities:hover .popover {
-    visibility: visible;
+    display: block;
 }
 
 .popover h2 {
@@ -78,7 +79,11 @@ h4 {
 
 li {
     margin-top: 5px;
-    padding-left: 22px;
+    list-style-type: none;
+}
+
+.filters .location li {
+
 }
 
 .nextPlaces {
