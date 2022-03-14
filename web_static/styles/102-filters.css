@@ -107,13 +107,59 @@ h4 {
     }
 }
 
-@media only screen and (max-width: 650px) {
+
+
+
+
+@media only screen and (max-width: 400px) {
     .filters {
         height: 66px;
     }
 
+    button {
+        font-size: 14px;
+        height: 40px;
+        margin: 0px 10px 0px auto;
+}
+
+    h3 {
+        font-weight: 600;
+        font-size: 14px;
+    }
     h4 {
         font-size: 10px;
     }
+    .popover {
+        background-color: #FAFAFA;
+        color: #484848;
+        width: auto;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        list-style-type: none;
+        padding: 20px 0px 20px 0px;
+        display: none;
+        position: relative;
+        z-index: 1;
+}
+    .popover {
+        margin-top: 5px;
+}
+    .popover h2 {
+        font-size: 14px;
+    }
+
+    .filters .locations li {
+        font-size: 10px;
+    }
+
+    .filters .amenities li {
+        font-size: 10px;
+    }
+
+    .filters .locations .nextPlaces {
+        margin-top: 20px;
+}
+
+
 
 }
